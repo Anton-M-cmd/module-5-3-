@@ -23,44 +23,39 @@ class House:
     def __eq__(self, other):
         isinstance(other,int)
         return self.number_of_floors == other
+        
 
     def __lt__(self, other):
         return self.number_of_floors < other
+        
 
     def __le__(self, other):
         return self.number_of_floors <= other
+        
 
     def __gt__(self, other):
         return self.number_of_floors > other
+        
 
     def __ge__(self, other):
         return self.number_of_floors >= other
+        
 
     def __ne__(self, other):
         return self.number_of_floors != other
+        
 
     def __add__(self, value):
         isinstance(value,int)
         return self.number_of_floors+value
+
+    
     def __radd__(self, value):
         return value + self.number_of_floors
+
+    
     def __iadd__(self, value):
         return self.number_of_floors + value
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 h1 = House('ЖК Эльбрус', 10)
